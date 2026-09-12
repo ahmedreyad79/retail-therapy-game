@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 12 – Retail Therapy Vocabulary Challenge</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(135deg,#fff3b0,#ffd6ec,#c9f7ff);
+  color:#263238;min-height:100vh
+}
+.container{max-width:1100px;margin:auto;padding:22px}
+.header{
+  background:linear-gradient(135deg,#6c2bd9,#e9008c);
+  color:#fff;padding:25px 30px;border-radius:28px;
+  box-shadow:0 12px 30px rgba(72,35,130,.25);text-align:center
+}
+.header h1{margin:0;font-size:34px}
+.header p{margin:8px 0 0;font-size:17px}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:15px}
+.badge{background:rgba(255,255,255,.2);padding:8px 15px;border-radius:25px;font-weight:800}
+.card{
+  margin-top:20px;background:rgba(255,255,255,.96);padding:26px;
+  border-radius:25px;box-shadow:0 10px 28px rgba(50,60,90,.16)
+}
+.instructions{
+  background:#fff7d1;border-left:7px solid #ffc400;padding:15px 18px;
+  border-radius:14px;font-weight:600;line-height:1.5
+}
+.textbox{
+  margin-top:20px;padding:24px;border-radius:20px;
+  background:#f8f5ff;border:3px solid #ded3ff;
+  font-size:19px;line-height:2
+}
+select{
+  font-size:17px;font-weight:800;padding:6px 35px 6px 9px;
+  border:2px solid #a99bd5;border-radius:10px;background:white;
+  cursor:pointer;min-width:125px
+}
+.q{
+  display:inline-flex;width:32px;height:32px;align-items:center;
+  justify-content:center;border-radius:50%;background:#ff7a00;color:#fff;
+  font-size:15px;font-weight:900;vertical-align:middle;margin:0 3px
+}
+.controls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+button{
+  border:0;border-radius:14px;padding:13px 23px;font-size:16px;
+  font-weight:900;cursor:pointer;box-shadow:0 5px 12px rgba(0,0,0,.12)
+}
+#check{background:#00b894;color:#fff}
+#show{background:#3742fa;color:#fff}
+#reset{background:#ff4757;color:#fff}
+button:hover{transform:translateY(-2px)}
+.result{
+  display:none;margin-top:22px;padding:22px;text-align:center;
+  background:#e8fff7;border-radius:20px
+}
+.result h2{margin:0 0 8px;color:#00866a}
+.bar{height:18px;background:#ddd;border-radius:20px;overflow:hidden;max-width:600px;margin:14px auto}
+.fill{height:100%;width:0;background:linear-gradient(90deg,#00b894,#00cec9,#6c5ce7);transition:.6s}
+.feedback{margin-top:16px;font-weight:800}
+.answer{background:#fff0f0;border:2px solid #ffb5b5;padding:12px;border-radius:12px;margin-top:15px}
+@media(max-width:700px){
+ .header h1{font-size:26px}.textbox{font-size:17px;line-height:2.2}
+ select{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🛍️ RETAIL THERAPY</h1>
+    <p>Grade 12 Vocabulary Challenge • Complete ONE Text</p>
+    <div class="badges">
+      <span class="badge">10 Questions</span>
+      <span class="badge">3 Options Each</span>
+      <span class="badge">100 Points</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="instructions">
+      Read the whole text carefully. Complete the <strong>10 gaps</strong> using the correct
+      vocabulary word. The target words are deliberately <strong>jumbled</strong> and appear in a
+      different order from the original list.
+    </div>
+
+    <div class="textbox">
+      Shopping habits have changed greatly in recent years. For some people, shopping is a
+      <span class="q">1</span>
+      <select id="q1"><option value="">Choose</option><option>brand</option><option>passion</option><option>malls</option></select>
+      rather than simply a way to buy necessary things. However, people should be careful not to become
+      <span class="q">2</span>
+      <select id="q2"><option value="">Choose</option><option>logos</option><option>addicted</option><option>trading</option></select>
+      to online shopping.
+
+      <br><br>
+
+      Businesses also compete strongly for customers. Successful companies use creative
+      <span class="q">3</span>
+      <select id="q3"><option value="">Choose</option><option>bargaining</option><option>advertising</option><option>charm</option></select>
+      to introduce their products. A memorable
+      <span class="q">4</span>
+      <select id="q4"><option value="">Choose</option><option>brand</option><option>slogans</option><option>passion</option></select>
+      can help customers recognise a company quickly, while attractive
+      <span class="q">5</span>
+      <select id="q5"><option value="">Choose</option><option>logos</option><option>malls</option><option>persuade</option></select>
+      make its products easy to identify.
+
+      <br><br>
+
+      Companies often try to
+      <span class="q">6</span>
+      <select id="q6"><option value="">Choose</option><option>persuade</option><option>trade</option><option>advertising</option></select>
+      customers by explaining the benefits of their products. Meanwhile, online
+      <span class="q">7</span>
+      <select id="q7"><option value="">Choose</option><option>charm</option><option>trading</option><option>brand</option></select>
+      has made it possible for people in different countries to buy and sell products easily.
+
+      <br><br>
+
+      In cities, large shopping
+      <span class="q">8</span>
+      <select id="q8"><option value="">Choose</option><option>malls</option><option>slogans</option><option>addicted</option></select>
+      offer shops, restaurants and entertainment in one place. In traditional markets, customers
+      sometimes enjoy
+      <span class="q">9</span>
+      <select id="q9"><option value="">Choose</option><option>passion</option><option>bargaining</option><option>logos</option></select>
+      with sellers to get a better price. These markets also have a special
+      <span class="q">10</span>
+      <select id="q10"><option value="">Choose</option><option>charm</option><option>advertising</option><option>trading</option></select>
+      that attracts both local people and tourists.
+    </div>
+
+    <div class="controls">
+      <button id="check">✅ Check Answers</button>
+      <button id="show">💡 Show Answers</button>
+      <button id="reset">🔄 Try Again</button>
+    </div>
+
+    <div class="result" id="result">
+      <h2 id="title">Your Score</h2>
+      <div id="score"></div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const answers={
+ q1:"passion",q2:"addicted",q3:"advertising",q4:"brand",q5:"logos",
+ q6:"persuade",q7:"trading",q8:"malls",q9:"bargaining",q10:"charm"
+};
+
+function evaluate(showAnswers=false){
+ let score=0;
+ for(const id in answers){
+   const el=document.getElementById(id);
+   el.style.borderColor="#a99bd5";
+   if(el.value===answers[id]){
+     score++;
+     el.style.borderColor="#16a34a";
+   }else{
+     el.style.borderColor="#e53935";
+   }
+ }
+ document.getElementById("result").style.display="block";
+ document.getElementById("score").innerHTML=`You scored <strong>${score}/10</strong> (${score*10}%).`;
+ document.getElementById("fill").style.width=(score*10)+"%";
+
+ if(score===10){
+   document.getElementById("title").textContent="🏆 Perfect Score!";
+   document.getElementById("feedback").textContent="Excellent! You have mastered the vocabulary.";
+ }else if(score>=7){
+   document.getElementById("title").textContent="🌟 Great Job!";
+   document.getElementById("feedback").textContent="Very good! Review the words you missed.";
+ }else{
+   document.getElementById("title").textContent="💪 Keep Practising!";
+   document.getElementById("feedback").textContent="Review the vocabulary and try again.";
+ }
+
+ if(showAnswers){
+   document.getElementById("feedback").innerHTML=
+     "💡 Answers: <strong>1 passion • 2 addicted • 3 advertising • 4 brand • 5 logos • 6 persuade • 7 trading • 8 malls • 9 bargaining • 10 charm</strong>";
+ }
+ document.getElementById("result").scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+document.getElementById("check").onclick=()=>evaluate(false);
+document.getElementById("show").onclick=()=>evaluate(true);
+document.getElementById("reset").onclick=()=>{
+ for(const id in answers){
+   document.getElementById(id).value="";
+   document.getElementById(id).style.borderColor="#a99bd5";
+ }
+ document.getElementById("result").style.display="none";
+ window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
+</body>
+</html>
